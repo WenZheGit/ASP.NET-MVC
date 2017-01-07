@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title</h2>
+
+<head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#fragment-1"><span>About Us</span></a></li>
+            <li><a href="#fragment-2"><span>Our History</span></a></li>
+            <li><a href="#fragment-3"><span>FAQ</span></a></li>
+        </ul>
+        <div id="fragment-1" style="background-color:#6a9aa5; color:white; height:480px">
+            <p>We know it sounds chessy, but we truly love what we do and love working with clients who are as enthusiastic about their travel.
+	            <br/><br/>
+                WORLD TRAVELLER, Inc. is a premiere, full service travel agency, located in the heart of downtown Melbourne for more than 20 years. We can serve all your travel planning and booking needs—beginning to end—and have specialities in high end, five-star travel; customized adventure travel and exotic destinations; cruise packages with Virtuoso Voyagers Club benefits; destinations weddings & luxury honeymoons.
+                <br/><br/>
+                We have also built a reputation over the past 20 years as the industry experts in arranging the best fares and benefits for your front-of-cabin and business international flights. we can also offer you advantages and perks you would rarely enjoy if you were to book travel on your own.
+                <br/><br/>
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <img src="~/Images/usa.jpg" />
+                    </td>
+                    <td>
+                        <img src="~/Images/20.gif" style="width:300px; height:200px"/>
+                    </td>
+                    <td>
+                        <img src="~/Images/12.jpg" style="width:300px; height:200px"/>
+                    </td>
+                </tr>
+            </table>
+            </p>
+        </div>
+        <div id="fragment-2" style="background-color:#4b8d80; color:white">
+            <table>
+                <tr>
+                    <td>
+                        WORLD TRAVELLER, Inc. was founded as a travel agency in 1995—one of the biggest travel agencies in Melbourne, Australia. Vincent Bi was a pioneer in opening up Australian travellers to other countries all over the world. Under the leadership of Vincent Bi, World Traveller developed highly respected international business services. As the city grew, so did the agency In later years, the agency also began providing greater high-end leisure and cruise travel services.
+                        <br /><br /><br /><br /><br /><br />
+                        Today, World Traveller has served over 10000 customers in Australia and take them to over 100 places all over the world. It gains a good reputation and a No.1 ranking in the industry of travel agencies around Australia.
+                    </td>
+                    <td>
+                        <img src="~/Images/19.jpg" style="width:300px; height:200px" /><br /><br />
+                        <img src="~/Images/16.jpg" style="width:300px; height:200px" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="fragment-3" style="font-family:'Segoe Print'; background-color:#f39393; color:white; font-size:small">
+            <pre><code>I have special dietary requirements – will they be catered for?</code></pre>
+            <p>
+                We will try our very hardest to accommodate all dietary requirements but in some out-of-the-way places it can be very difficult to guarantee. We will let you know if there are places on your itinerary where this is the case.
+            </p>
+            <pre><code>How do I organise my Visa?</code></pre>
+            <p>
+                Please contact the relevant local embassy, or visit a travel agent, to organise your visa/s.
+            </p>
+            <pre><code>What type of luggage do you recommend I take?</code></pre>
+            <p>
+                On most Intrepid trips you will be required to carry your own luggage, sometimes up stairs and on and off transport. We therefore recommend you travel with a backpack. For a full list of what to take on your adventure see our Ultimate Packing List.
+            </p>
+            <pre><code>What time can I check in at my arrival hotel?</code></pre>
+            <p>
+                Check-in times can vary from hotel to hotel and region to region. Generally, they are between midday and 2pm. If you do arrive earlier, you’ll be able to store your luggage with the hotel and head out to explore for a couple of hours.
+            </p>
+        </div>
+    </div>
+    <script>
+    $("#tabs").tabs();
+    </script>
+   
+</body>

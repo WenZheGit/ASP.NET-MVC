@@ -1,0 +1,292 @@
+﻿@{
+    ViewBag.Title = "Documentation";
+}
+
+
+@Styles.Render("~/Content/document.css")
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<br />
+<br />
+<div id="accordion">
+    <h3>@ViewBag.Title</h3>
+    <div>
+        <address class="address">
+            <dl class="dl-horizontal">
+                <dt>
+                    Name :
+                </dt>
+                <dd>
+                    WENZHE BI
+                </dd>
+
+                <dt>
+                    ID   :
+                </dt>
+                <dd>
+                    26520583
+                </dd>
+
+                <dt>
+                    Unit Name :
+                </dt>
+                <dd>
+                    FIT5032 Internet Applications development
+                </dd>
+
+                <dt>
+                    Unit Provider :
+                </dt>
+                <dd>
+                    Monash University,The Caulfiedl School of Information Technology
+                </dd>
+
+                <dt>
+                    Assignment Number :
+                </dt>
+                <dd>
+                    Assignment 3
+                </dd>
+
+                <dt>
+                    Date of Submission :
+                </dt>
+                <dd>
+                    23 /10 /2015
+                </dd>
+
+                <dt>
+                    Tutor Name :
+                </dt>
+                <dd>
+                    Julian Li
+                </dd>
+            </dl>
+        </address>
+
+        <address>
+            <strong>Email :</strong> <a href="http://wbi3@student.monash.edu">Wenzhe Bi</a> <br />
+            <strong>Assginment Specification :</strong> <a href="http://moodle.vle.monash.edu/mod/page/view.php?id=2639939">Assignment 3</a>
+        </address>
+        <br />
+    </div>
+
+    <h3>MVC functionality</h3>
+    <div>
+        <br /><br />
+        <table border="1" width="100%"
+               style="border:inset; border-width:2px; background-color:#88bf83; color:white">
+            <tr style="color:#26425f">
+                <td><b>Function</b></td>
+                <td><b>Model</b></td>
+                <td><b>View</b></td>
+                <td><b>Controller</b></td>
+            </tr>
+            <tr>
+                <td>
+                    Create Customer /  Order
+                </td>
+                <td>
+                    Database: Customer / Order
+                </td>
+                <td>
+                    Customer/Create Page, Order/Create Page
+                </td>
+                <td>
+                    CustomerController, OrderController
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Edit Customer / Order
+                </td>
+                <td>
+                    Database: Customer / Order
+                </td>
+                <td>
+                    Customer/Edit Page, Order/Edit Page
+                </td>
+                <td>
+                    CustomerController, OrderController
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Delete Customer / Order
+                </td>
+                <td>
+                    Database: Customer / Order
+                </td>
+                <td>
+                    Customer/Delete Page, Order/Delete Page
+                </td>
+                <td>
+                    CustomerController, OrderController
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Search Customer / Order
+                </td>
+                <td>
+                    Database: Customer / Order
+                </td>
+                <td>
+                    Customer/Search Page, Order/Search Page
+                </td>
+                <td>
+                    CustomerController, OrderController
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>JQuery functionality</h3>
+    <div>
+        <br /><br />
+        <table border="1" width="100%"
+               style="border:inset; border-width:2px; background-color:#faa1a1; color:white">
+            <tr style="color:#26425f">
+                <td><b>Function</b></td>
+                <td><b>Page</b></td>
+            </tr>
+            <tr>
+                <td>
+                    Row Highlighting
+                </td>
+                <td>
+                    Customer, Order
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Alternating colouring
+                </td>
+                <td>
+                    Customer, Order
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date Picker
+                </td>
+                <td>
+                    Edit Order
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Animation Effect
+                </td>
+                <td>
+                    Home
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tabs Widget
+                </td>
+                <td>
+                    About
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Accordion Widget
+                </td>
+                <td>
+                    Document
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Show Effect
+                </td>
+                <td>
+                    Document
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br />
+
+
+<button id="show" class="ui-state-default ui-corner-all">Show Image Details</button> 
+   
+<br /><br />
+<div id="div" style="display:none">
+    <pre><code>
+<table width="90%">
+<tr>
+<td>
+<img src="~/Images/hk.jpg" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Ben Groundwater</b></font>
+            </td>
+<td>
+<img src="~/Images/12.jpg" style="width:300px; height:200px;" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Megan Levy</b></font>
+            </td>
+        </tr>
+<tr>
+<td>
+<img src="~/Images/trip.jpg" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Lee Atkinson</b></font>
+            </td>
+<td>
+<img src="~/Images/16.jpg" style="width:300px; height:200px;" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Brigid Delaney</b></font>
+            </td>
+        </tr>
+<tr>
+<td>
+<img src="~/Images/africa.jpg" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Theo Allofs</b></font>
+            </td>
+<td>
+<img src="~/Images/19.jpg" style="width:300px; height:200px;" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Katrina Lobley</b></font>
+            </td>
+        </tr>
+<tr>
+<td>
+<img src="~/Images/1.jpg" style="width:300px; height:180px;" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Andrew Bain</b></font>
+            </td>
+<td>
+<img src="~/Images/usa.jpg" style="width:300px; height:180px;" />
+            </td>
+<td>
+<font style="font-family:'Segoe Script'"><b>Fleur Bainger</b></font>
+            </td>
+        </tr>
+    </table>
+        </code></pre>
+</div>
+
+<script>
+    $("#accordion").accordion();
+
+    $("#show").click(function () {
+        $("#div").show("fold", 1000);
+    });
+</script>
+

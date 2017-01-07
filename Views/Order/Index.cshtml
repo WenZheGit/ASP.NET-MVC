@@ -1,0 +1,73 @@
+﻿@model IEnumerable<ass3.Models.Order>
+
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Content/RowHighLighting.css")
+@Scripts.Render("~/Scripts/RowHighLighting.js")
+
+
+
+<h2>Order Information</h2>
+<hr/>
+<p>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                @Html.ActionLink("Create New", "Create")
+            </td>
+            <td align="right">
+                @Html.ActionLink("Search", "Search")
+            </td>
+        </tr>
+    </table>
+</p>
+
+<table id="data" class="table">
+    <thead>
+        <tr>
+            <th>
+                Customer
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destination)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Days)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Days)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.OrderId }) 
+        </td>
+    </tr>
+}
+
+</table>
